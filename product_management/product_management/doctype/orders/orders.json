@@ -1,0 +1,81 @@
+{
+ "_liked_by": "[\"Administrator\"]",
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-12-22 20:27:33.277562",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_xcg7",
+  "customer",
+  "ordernumber",
+  "status",
+  "order_items",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_xcg7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "ordernumber",
+   "fieldtype": "Data",
+   "label": "Order Number"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nSubmitted\nCancelled"
+  },
+  {
+   "fieldname": "order_items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Orders Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Orders",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-12-22 21:25:52.559150",
+ "modified_by": "Administrator",
+ "module": "Product Management",
+ "name": "Orders",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
