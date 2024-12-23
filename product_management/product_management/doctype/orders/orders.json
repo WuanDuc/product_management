@@ -22,7 +22,7 @@
    "fieldname": "customer",
    "fieldtype": "Link",
    "label": "Customer",
-   "options": "Customer"
+   "options": "Customers"
   },
   {
    "fieldname": "ordernumber",
@@ -32,8 +32,10 @@
   {
    "fieldname": "status",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "Status",
-   "options": "Draft\nSubmitted\nCancelled"
+   "options": "Draft\nSubmitted\nCancelled",
+   "reqd": 1
   },
   {
    "fieldname": "order_items",
@@ -56,7 +58,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-12-22 21:25:52.559150",
+ "modified": "2024-12-23 20:47:46.147093",
  "modified_by": "Administrator",
  "module": "Product Management",
  "name": "Orders",
