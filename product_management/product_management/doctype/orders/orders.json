@@ -22,12 +22,14 @@
    "fieldname": "customer",
    "fieldtype": "Link",
    "label": "Customer",
-   "options": "Customers"
+   "options": "Customers",
+   "reqd": 1
   },
   {
    "fieldname": "ordernumber",
    "fieldtype": "Data",
-   "label": "Order Number"
+   "label": "Order Number",
+   "reqd": 1
   },
   {
    "fieldname": "status",
@@ -58,7 +60,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-12-23 20:47:46.147093",
+ "modified": "2024-12-24 17:36:13.054884",
  "modified_by": "Administrator",
  "module": "Product Management",
  "name": "Orders",
